@@ -1,0 +1,75 @@
+.contact__list {
+  display: flex;
+  padding-top: 46px;
+  padding-bottom: 28px;
+  justify-content: center;
+}
+
+.contact__item {
+  margin-right: 100px;
+  position: relative;
+}
+
+.contact__item:last-child {
+  margin-right: 0;
+  position: relative;
+}
+
+.contact__item svg {
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+
+.contact__item a {
+  color: rgb(238, 238, 238);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  padding: 10px;
+}
+
+
+.contact__socials-list {
+  display: flex;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+
+.contact__socials-item {
+  margin-right: 24px;
+}
+
+.contact__socials-item:last-child {
+  margin-right: 0px;
+}
+
+.contact__socials-сircle {
+  display: flex;
+  background: #393E46;
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+
+  --s: 48px;
+  --b: 8px;
+  /* the border thickness*/
+  --g: 5px;
+  /* the gap */
+  --c: #414141;
+  /* the color */
+
+  width: var(--s);
+  aspect-ratio: 1;
+  outline: calc(var(--s)/2) solid rgba(36, 36, 36, 0.5);
+  outline-offset: calc(var(--s)/-2);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.contact__socials-сircle:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: var(--g);
+}

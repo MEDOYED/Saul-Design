@@ -1,0 +1,46 @@
+.works {
+  background: url("/src/img/works/works__bg.svg") 0 0 / 100% no-repeat;
+}
+
+.works .container {
+  position: relative;
+}
+
+.works__title {
+  padding: 146px 0 16px;
+}
+
+.works__button-box {
+  margin-bottom: 48px;
+}
+
+.works__button {
+  margin-right: 16px;
+}
+
+.works__button:last-child {
+  margin-right: 0px;
+}
+
+.works__list {
+  display: flex;
+  padding-bottom: 146px;
+}
+
+.works__item {
+  margin-right: 45px;
+}
+
+.works__item:last-child {
+  margin-right: 0px;
+}
+
+.works__link {
+  display: grid;
+  place-items: center;
+  width: 386px;
+  height: 280px;
+  border-radius: 16px;
+  backdrop-filter: blur(4px);
+  background: rgba(57, 62, 70, 0.5);
+}

@@ -1,0 +1,128 @@
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.header__nav-logo {
+
+}
+
+.header__content .container {
+
+
+}
+
+.header__content {
+  
+}
+
+.header__nav-list {
+  display: flex;
+  margin-right: 96px;
+}
+
+.header__nav-item {
+  color: #eeeeee;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-left: 40px;
+  /* transition: 0.4s; */
+  /* transition-property: text-decoration-thickness 0.5s; */
+  --b: 0.1em;   /* the thickness of the line */
+  --c: #00ADB5; /* the color */
+  
+  color: #0000;
+  padding-block: var(--b);
+  background: 
+    linear-gradient(var(--c) 50%,#eeeeee 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+
+}
+
+.header__nav-item:hover {
+  /* color: #00ADB5;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px; */
+  --_p: 100%;
+  --_s: .3s;
+}
+
+.header__content-title {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 96px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #00ADB5;
+  text-transform: uppercase;
+  max-width: 700px;
+  text-shadow: 0 4px 4px  rgba(0, 0, 0, 0.25);
+  padding-top: 130px;
+  padding-bottom: 48px;
+}
+
+.header__content-title::first-line {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 96px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.header__content-list {
+  display: flex;
+  padding-bottom: 354px;
+}
+
+.header__content-item {
+  position: relative;
+}
+
+.header__content-btn-one {
+  margin-right: 24px;
+}
+
+.header__content-btn-two {
+  padding-right: 60px;  
+}
+
+.header__download-svg {
+  position: absolute;
+  left: 158px;
+  top: 0px;
+  display: flex;
+}
+
+.header__download-svg path {
+  transition: stroke 0.3s ease;
+}
+
+.header__download-svg:hover path {
+  stroke: #00ADB5;
+}
+
+.header__img {
+  position: relative;
+}
+
+.header__img::before {
+  content: "";
+  background: url('/src/img/header/header__image.svg');
+  position: absolute;
+  right: 96px;
+  top: -700px;
+  width: 535px;
+  height: 580px;
+  display: block;
+  padding: 94px 0px 98px 0px;
+}
+

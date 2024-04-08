@@ -1,0 +1,27 @@
+.about .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__wrapper {
+  display: flex;
+  position: relative;
+}
+
+.about__content-title {
+  padding-top: 127px;
+}
+
+.about__content-text {
+  color: rgba(238, 238, 238, 0.75);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  max-width: 389px;
+  padding-bottom:422px;
+}
+
+.about__image {
+  padding: 116px 0px 120px 0;
+}

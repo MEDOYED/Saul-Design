@@ -1,0 +1,130 @@
+.registration .container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 157px;
+}
+
+
+.registration__main {}
+
+.registration__main-title {
+  line-height: 80px;
+}
+
+.registration__title {}
+
+.title-blue {}
+
+.registraition__main-image {
+  padding-left: 181px;
+  padding-bottom: 125px;
+}
+
+.registration__form {}
+
+.registration__inner {
+  display: flex;
+}
+
+.registration__form-username {
+  max-width: 288px;
+  margin-right: 24px;
+}
+
+.registration__form-label {
+  color: rgb(238, 238, 238);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: left;
+}
+
+.registration__form-input {
+  /* position: static; */
+  display: flex;
+  width: 288px;
+  height: 59px;
+  padding: 16px 0 16px 24px;
+  border-radius: 16px;
+  background: rgba(57, 62, 70, 0.5);
+  color: rgb(238, 238, 238);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  margin-top: 10px;
+}
+
+.registration__form-input::placeholder {
+  position: static;
+  width: 56px;
+  height: 27px;
+  display: flex;
+  color: rgba(238, 238, 238, 0.5);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.registration__form-email {}
+
+.registration__form-message {
+  padding-top: 24px;
+}
+
+.registration__form-textarea {
+  display: flex;
+  width: 600px;
+  height: 280px;
+  padding: 16px 16px 16px 24px;
+  border-radius: 16px;
+  background: rgba(57, 62, 70, 0.5);
+  margin-top: 10px;
+  color: rgb(238, 238, 238);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  margin-top: 10px;
+  resize: none;
+}
+
+.registration__form-textarea::placeholder {
+  position: static;
+  height: 27px;
+  display: flex;
+  color: rgba(238, 238, 238, 0.5);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.registration__form-send {
+  position: relative;
+  padding-right: 56px;
+  margin-top: 24px;
+}
+
+.registration__form-send svg {
+  position: absolute;
+  left: 167px;
+  top: 13px;
+}
+/* .registration__form-send img {
+  position: absolute;
+  left: 167px;
+  top: 13px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.avatar {
+  transform-origin: 50% 50px; /* 150px = path radius */
+/* } */
+
+/* .avatar.animate {
+  animation: spin 1s backwards;
+} */
+
