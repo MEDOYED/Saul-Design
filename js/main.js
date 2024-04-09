@@ -1,16 +1,14 @@
 //  фильтр в секции works
 var mixer = mixitup('.target');
 
-// const sendButton = document.getElementById('sendButton');
-// const avatar = document.querySelector('.avatar');
 
-// function startAnimation() {
-//   avatar.classList.add('animate');
-// }
-
-
-// sendButton.addEventListener('click', startAnimation);
-
-// avatar.addEventListener('animationend', () => {
-//   avatar.classList.remove('animate');
-// });
+// анимация самолетика при нажатии на кнопку
+document.querySelector('.registration__form-send').addEventListener('click', function() {
+  var plane = document.querySelector ('.registration-plane');
+  plane.classList.add('plane-animation');
+  plane.removeEventListener('click', arguments.callee);
+  plane.addEventListener('animationend', function() {
+    plane.classList.remove('plane-animation');
+    plane.addEventListener('click', arguments.callee);
+  });
+});

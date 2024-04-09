@@ -103,28 +103,53 @@
   margin-top: 24px;
 }
 
-.registration__form-send svg {
+/* .registration__form-send svg {
   position: absolute;
   left: 167px;
   top: 13px;
-}
-/* .registration__form-send img {
-  position: absolute;
-  left: 167px;
-  top: 13px;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(1turn);
-  }
-}
-
-.avatar {
-  transform-origin: 50% 50px; /* 150px = path radius */
-/* } */
-
-/* .avatar.animate {
-  animation: spin 1s backwards;
 } */
 
+.registration-plane {
+  position: absolute;
+  left: 167px;
+  top: 13px;
+
+}
+
+.plane-animation {
+  animation-name: plane;  
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes plane {
+  from {
+    transform-origin: bottom right;
+    transform: rotate(0);
+  }
+  20% {
+    transform-origin: bottom right;
+    transform: translateX(60px) translateY(-15px) rotate(90deg);
+  }
+  40% {
+    transform-origin: bottom right;
+    transform: translateX(60px) translateY(-15px) rotate(360deg);
+  }
+  50% {
+    transform-origin: bottom right;
+    transform: translateX(100px) translateY(-30px) rotate(480deg);
+  }
+  68% {
+    transform-origin: bottom right;
+    transform: translateX(100px) translateY(-30px) rotate(600deg);
+  }
+  85% {
+    transform: translateX(0) rotate(720deg);
+  }
+  to {
+    transform-origin: bottom right;
+    transform: rotate(720deg);
+  }
+}
