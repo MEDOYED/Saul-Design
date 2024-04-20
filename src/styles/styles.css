@@ -1,12 +1,3 @@
-/* @import '/src/styles/reset.css';
-@import '/src/styles/fonts.css';
-@import '/src/styles/main.css';
-@import '/src/styles/header.css';
-@import '/src/styles/about.css';
-@import '/src/styles/works.css';
-@import '/src/styles/registration.css';
-@import '/src/styles/contact.css'; */
-
 @import url('../styles/reset.css');
 @import url('../styles/fonts.css');
 @import url('../styles/main.css');

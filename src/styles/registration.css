@@ -4,23 +4,14 @@
   padding-top: 157px;
 }
 
-
-.registration__main {}
-
 .registration__main-title {
   line-height: 80px;
 }
-
-.registration__title {}
-
-.title-blue {}
 
 .registraition__main-image {
   padding-left: 181px;
   padding-bottom: 125px;
 }
-
-.registration__form {}
 
 .registration__inner {
   display: flex;
@@ -40,7 +31,6 @@
 }
 
 .registration__form-input {
-  /* position: static; */
   display: flex;
   width: 288px;
   height: 59px;
@@ -64,8 +54,6 @@
   font-weight: 700;
   line-height: 27px;
 }
-
-.registration__form-email {}
 
 .registration__form-message {
   padding-top: 24px;
@@ -103,17 +91,10 @@
   margin-top: 24px;
 }
 
-/* .registration__form-send svg {
-  position: absolute;
-  left: 167px;
-  top: 13px;
-} */
-
 .registration-plane {
   position: absolute;
   left: 167px;
   top: 13px;
-
 }
 
 .plane-animation {
