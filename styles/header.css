@@ -97,7 +97,7 @@
 
 .header__img::before {
   content: "";
-  background: url('../img/header/header__image.svg');
+  background: url('../src/img/header/header__image.svg');
   position: absolute;
   right: 96px;
   top: -700px;
