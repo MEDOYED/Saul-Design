@@ -9,7 +9,7 @@
 }
 
 .about__content-title {
-  padding-top: 127px;
+  margin-top: 127px;
 }
 
 .about__content-text {
@@ -19,7 +19,6 @@
   line-height: 27px;
   text-align: left;
   max-width: 389px;
-  padding-bottom:422px;
 }
 
 .about__image {
@@ -31,6 +30,10 @@
 /* ------------------- MEDIA -------------------- */
 
 @media (max-width: 1200px) {
+  .about__image {
+    max-width: 490px;
+    height: 100%;
+  }
 
 }
 
@@ -39,7 +42,17 @@
 /* ======================= 992 ======================== */
 
 @media (max-width: 992px) {
-
+  .about__image {
+    max-width: 390px;
+    height: 100%;
+  }
+  .about__content-title {
+    font-size: 50px;
+  }
+  .about__content-text {
+    font-size: 16px;
+    max-width: 300px;
+  }
 }
 
 /* ======================= 768 ======================== */
@@ -48,7 +61,20 @@
 
 
 @media (max-width: 768px) {
-
+  .about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__image {
+    display: none;
+  }
+  .about__content {
+    margin-bottom: 60px;
+  }
+  .about__content-title {
+    margin-top: 60px;
+  }
 }
 
 /* ======================= 480 ======================== */
