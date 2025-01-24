@@ -1,3 +1,30 @@
+/* ======= <FONTS> ========  */
+/* ======= <FONTS> ========  */
+/* ======= <FONTS> ========  */
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"),
+    url("./assets/fonts/Poppins-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"),
+    url("./assets/fonts/Poppins-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: auto;
+}
+
+/* ======= </FONTS> ========  */
+
+/* ========  <RESET> ========== */
+/* ========  <RESET> ========== */
+/* ========  <RESET> ========== */
 * {
   padding: 0;
   margin: 0;
@@ -90,3 +117,5 @@ h6 {
 a {
   color: inherit;
 }
+
+/* ========  </RESET> ========== */
