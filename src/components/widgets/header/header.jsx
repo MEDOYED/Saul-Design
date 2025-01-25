@@ -2,6 +2,7 @@ import HeaderDownload from "../../UI/buttons/header-download/header-download";
 
 import headerLogo from "../../../assets/img/header/header__logo.svg";
 import headerImg from "../../../assets/img/header/header__image.svg";
+import cv from "../../../assets/img/files-to-download/plan.pdf";
 
 import "./header.css";
 
@@ -49,7 +50,8 @@ const Header = () => {
                 <li className="header__content-item">
                   <a
                     className="header__content-btn-two button"
-                    href=""
+                    href={cv}
+                    download="planZajenc.pdf"
                   >
                     Download CV
                   </a>
