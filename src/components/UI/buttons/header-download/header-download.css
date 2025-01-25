@@ -1,0 +1,14 @@
+.header__download-svg {
+  position: absolute;
+  left: 158px;
+  top: 0px;
+  display: flex;
+}
+
+.header__download-svg path {
+  transition: stroke 0.3s ease;
+}
+
+.header__download-svg:hover path {
+  stroke: #00adb5;
+}
