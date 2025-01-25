@@ -1,4 +1,5 @@
 import HeaderDownload from "../../UI/buttons/header-download/header-download";
+import CrossSectionLine from "../../UI/lines/cross-section-line/cross-section-line";
 
 import headerLogo from "../../../assets/img/header/header__logo.svg";
 import headerImg from "../../../assets/img/header/header__image.svg";
@@ -30,7 +31,8 @@ const Header = () => {
             </ul>
           </div>
         </div>
-        <hr className="line" />
+
+        <CrossSectionLine />
         <div className="container">
           <div className="header__content">
             <div className="header__content-text">
@@ -65,8 +67,6 @@ const Header = () => {
             </div>
           </div>
         </div>
-
-        <hr classNameName="line" />
       </header>
     </>
   );

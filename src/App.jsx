@@ -1,12 +1,14 @@
-import './App.css';
+import Header from "./components/widgets/header/header";
+import CrossSectionLine from "./components/UI/lines/cross-section-line/cross-section-line";
 
-import Header from './components/widgets/header/header';
+import "./App.css";
 
 function App() {
   return (
     <>
       <div class="wrapper">
         <Header />
+        <CrossSectionLine />
 
         <section class="about" id="about">
           <div class="container">
@@ -15,11 +17,21 @@ function App() {
                 About <span class="title-blue">me</span>
               </h2>
               <p class="about__content-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Nunc vulputate libero et velit interdum, ac
+                aliquet odio mattis. Class aptent taciti sociosqu ad
+                litora torquent per conubia nostra, per inceptos
+                himenaeos. Curabitur tempus urna at turpis condimentum
+                lobortis
               </p>
             </div>
 
-            <img class="about__image" loading="lazy" src="./src/img/about_me/about__img.svg" alt="about illustrarion" />
+            <img
+              class="about__image"
+              loading="lazy"
+              src="./src/img/about_me/about__img.svg"
+              alt="about illustrarion"
+            />
           </div>
           <hr class="line" />
         </section>
@@ -31,16 +43,32 @@ function App() {
             </h2>
 
             <div class="works__button-box">
-              <button class="works__button button button--active" type="button" data-filter="all">
+              <button
+                class="works__button button button--active"
+                type="button"
+                data-filter="all"
+              >
                 All
               </button>
-              <button class="works__button button" type="button" data-filter=".category-a">
+              <button
+                class="works__button button"
+                type="button"
+                data-filter=".category-a"
+              >
                 UI
               </button>
-              <button class="works__button button" type="button" data-filter=".category-b">
+              <button
+                class="works__button button"
+                type="button"
+                data-filter=".category-b"
+              >
                 UX
               </button>
-              <button class="works__button button" type="button" data-filter=".category-c">
+              <button
+                class="works__button button"
+                type="button"
+                data-filter=".category-c"
+              >
                 Web Design
               </button>
             </div>
@@ -49,7 +77,11 @@ function App() {
               <li class="mix category-a works__item">
                 <a href="#" class="works__link">
                   <div class="works__image-box">
-                    <img src="./src/img/works/1.png" loading="lazy" alt="" />
+                    <img
+                      src="./src/img/works/1.png"
+                      loading="lazy"
+                      alt=""
+                    />
                   </div>
                 </a>
               </li>
@@ -57,7 +89,11 @@ function App() {
               <li class="mix category-b works__item">
                 <a href="#" class="works__link">
                   <div class="works__image-box">
-                    <img src="./src/img/works/2.png" loading="lazy" alt="" />
+                    <img
+                      src="./src/img/works/2.png"
+                      loading="lazy"
+                      alt=""
+                    />
                   </div>
                 </a>
               </li>
@@ -65,7 +101,11 @@ function App() {
               <li class="mix category-c works__item">
                 <a href="#" class="works__link">
                   <div class="works__image-box">
-                    <img src="./src/img/works/3.png" loading="lazy" alt="" />
+                    <img
+                      src="./src/img/works/3.png"
+                      loading="lazy"
+                      alt=""
+                    />
                   </div>
                 </a>
               </li>
@@ -79,7 +119,9 @@ function App() {
               <div class="registration__main">
                 <h2 class="registration__main-title title">
                   Got a project in <br />
-                  <span class="registration__title title-blue">mind?</span>
+                  <span class="registration__title title-blue">
+                    mind?
+                  </span>
                 </h2>
                 <div class="registraition__main-image">
                   <span>
@@ -130,30 +172,68 @@ function App() {
                 </div>
               </div>
 
-              <form class="registration__form" id="registration__form" action="#" method="post">
+              <form
+                class="registration__form"
+                id="registration__form"
+                action="#"
+                method="post"
+              >
                 <div class="registration__form-inner">
                   <p class="registration__form-username">
-                    <label class="registration__form-label" for="username">
+                    <label
+                      class="registration__form-label"
+                      for="username"
+                    >
                       Your name
                     </label>
-                    <input class="registration__form-input" type="text" name="username" id="username" placeholder="Name" required />
+                    <input
+                      class="registration__form-input"
+                      type="text"
+                      name="username"
+                      id="username"
+                      placeholder="Name"
+                      required
+                    />
                   </p>
 
                   <p class="registration__form-email">
-                    <label class="registration__form-label" for="email">
+                    <label
+                      class="registration__form-label"
+                      for="email"
+                    >
                       Your email
                     </label>
-                    <input class="registration__form-input" type="email" name="email" id="email" placeholder="Email" required />
+                    <input
+                      class="registration__form-input"
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Email"
+                      required
+                    />
                   </p>
                 </div>
 
                 <p class="registration__form-message">
-                  <label class="registration__form-label" for="message">
+                  <label
+                    class="registration__form-label"
+                    for="message"
+                  >
                     Your Message
                   </label>
-                  <textarea class="registration__form-textarea" name="message" id="message" placeholder="Message"></textarea>
+                  <textarea
+                    class="registration__form-textarea"
+                    name="message"
+                    id="message"
+                    placeholder="Message"
+                  ></textarea>
                 </p>
-                <button class="registration__form-send button button--active" id="sendButton" type="submit" form="registration__form">
+                <button
+                  class="registration__form-send button button--active"
+                  id="sendButton"
+                  type="submit"
+                  form="registration__form"
+                >
                   <span>Send Message</span>
                   <span>
                     {/* <svg class="registration-plane" width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -264,7 +344,10 @@ function App() {
 
               <li class="contact__socials-item">
                 <a href="#" class="contact__socials-сircle">
-                  <img src="./src/img/footer/instagram.svg" alt="инстаграм" />
+                  <img
+                    src="./src/img/footer/instagram.svg"
+                    alt="инстаграм"
+                  />
                 </a>
               </li>
 

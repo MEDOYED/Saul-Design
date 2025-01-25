@@ -20,11 +20,6 @@ html {
   overflow: hidden;
 }
 
-.line {
-  width: 100%;
-  border: 1px solid rgba(238, 238, 238, 0.1);
-}
-
 .button {
   backdrop-filter: blur(4px);
   background-color: rgba(57, 62, 70, 0.75);
