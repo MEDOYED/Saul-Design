@@ -1,6 +1,7 @@
 import Header from "./components/widgets/header/header";
 import AboutSection from "./components/widgets/about-section/about-section";
 import CrossSectionLine from "./components/UI/lines/cross-section-line/cross-section-line";
+import WorksSection from "./components/widgets/works-section/works-section";
 
 import "./App.css";
 
@@ -11,6 +12,8 @@ function App() {
         <Header />
         <CrossSectionLine />
         <AboutSection />
+        <CrossSectionLine />
+        <WorksSection />
         <CrossSectionLine />
 
         <section class="registration" id="registration">

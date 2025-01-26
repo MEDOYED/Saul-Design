@@ -1,86 +1,143 @@
+import { useState } from "react";
+
+import imgOne from "../../../assets/img/works/1.png";
+import imgTwo from "../../../assets/img/works/2.png";
+import imgThree from "../../../assets/img/works/3.png";
+
 import "./works-section.css";
 
 const WorksSection = () => {
+  const [curentBtn, setCurentBtn] = useState("all");
+
+  const onAll = () => {
+    setCurentBtn("all");
+  };
+
+  const onUi = () => {
+    setCurentBtn("ui");
+  };
+
+  const onUx = () => {
+    setCurentBtn("ux");
+  };
+
+  const onDesign = () => {
+    setCurentBtn("design");
+  };
+
+  // const renderImg = (curentBtn) => {
+  //   return (
+
+  //   )
+
   return (
     <>
-      <section class="works" id="works">
-        <div class="container">
-          <h2 class="works__title title">
-            My recent <span class="title-blue">works</span>
+      <section className="works" id="works">
+        <div className="container">
+          <h2 className="works__title title">
+            My recent <span className="title-blue">works</span>
           </h2>
 
-          <div class="works__button-box">
+          <div className="works__button-box">
             <button
-              class="works__button button button--active"
+              className="works__button button button--active"
               type="button"
-              data-filter="all"
+              onClick={onAll}
             >
               All
             </button>
             <button
-              class="works__button button"
+              className="works__button button"
               type="button"
-              data-filter=".category-a"
+              onClick={onUi}
             >
               UI
             </button>
             <button
-              class="works__button button"
+              className="works__button button"
               type="button"
-              data-filter=".category-b"
+              onClick={onUx}
             >
               UX
             </button>
             <button
-              class="works__button button"
+              className="works__button button"
               type="button"
-              data-filter=".category-c"
+              onClick={onDesign}
             >
               Web Design
             </button>
           </div>
 
-          <ul class="works__list target">
-            <li class="mix category-a works__item">
-              <a href="#" class="works__link">
-                <div class="works__image-box">
-                  <img
-                    src="./src/img/works/1.png"
-                    loading="lazy"
-                    alt=""
-                  />
-                </div>
-              </a>
-            </li>
+          {curentBtn === "all" && (
+            <ul className="works__list target">
+              <li className="works__item">
+                <a href="#" className="works__link">
+                  <div className="works__image-box">
+                    <img src={imgOne} loading="lazy" alt="" />
+                  </div>
+                </a>
+              </li>
 
-            <li class="mix category-b works__item">
-              <a href="#" class="works__link">
-                <div class="works__image-box">
-                  <img
-                    src="./src/img/works/2.png"
-                    loading="lazy"
-                    alt=""
-                  />
-                </div>
-              </a>
-            </li>
+              <li className="works__item">
+                <a href="#" className="works__link">
+                  <div className="works__image-box">
+                    <img src={imgTwo} loading="lazy" alt="" />
+                  </div>
+                </a>
+              </li>
 
-            <li class="mix category-c works__item">
-              <a href="#" class="works__link">
-                <div class="works__image-box">
-                  <img
-                    src="./src/img/works/3.png"
-                    loading="lazy"
-                    alt=""
-                  />
-                </div>
-              </a>
-            </li>
-          </ul>
+              <li className="works__item">
+                <a href="#" className="works__link">
+                  <div className="works__image-box">
+                    <img src={imgThree} loading="lazy" alt="" />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          )}
+
+          {curentBtn === "ui" && (
+            <ul className="works__list target">
+              <li className="works__item">
+                <a href="#" className="works__link">
+                  <div className="works__image-box">
+                    <img src={imgOne} loading="lazy" alt="" />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          )}
+
+          {curentBtn === "ux" && (
+            <ul className="works__list target">
+              <li className="works__item">
+                <a href="#" className="works__link">
+                  <div className="works__image-box">
+                    <img src={imgTwo} loading="lazy" alt="" />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          )}
+
+          {curentBtn === "design" && (
+            <ul className="works__list target">
+              <li className="works__item">
+                <a href="#" className="works__link">
+                  <div className="works__image-box">
+                    <img src={imgThree} loading="lazy" alt="" />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          )}
         </div>
       </section>
     </>
   );
 };
+
+// };
 
 export default WorksSection;
