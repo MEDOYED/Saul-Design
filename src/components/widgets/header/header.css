@@ -81,11 +81,10 @@
 
 .header__content-list {
   display: flex;
-  /* padding-bottom: 354px; */
 }
 
-.header__content-item {
-  position: relative;
+.header__content-item a {
+  display: flex;
 }
 
 .header__content-btn-one {

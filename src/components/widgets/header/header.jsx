@@ -56,9 +56,8 @@ const Header = () => {
                     download="planZajenc.pdf"
                   >
                     Download CV
+                    <HeaderDownload />
                   </a>
-
-                  <HeaderDownload />
                 </li>
               </ul>
             </div>

@@ -1,8 +1,5 @@
 .header__download-svg {
-  position: absolute;
-  left: 158px;
-  top: 0px;
-  display: flex;
+  margin-left: 15px;
 }
 
 .header__download-svg path {
