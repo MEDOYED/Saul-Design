@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import WorkItem from "../work-item/work-item";
+
 import imgOne from "../../../assets/img/works/1.png";
 import imgTwo from "../../../assets/img/works/2.png";
 import imgThree from "../../../assets/img/works/3.png";
@@ -24,11 +26,6 @@ const WorksSection = () => {
   const onDesign = () => {
     setCurentBtn("design");
   };
-
-  // const renderImg = (curentBtn) => {
-  //   return (
-
-  //   )
 
   return (
     <>
@@ -69,75 +66,30 @@ const WorksSection = () => {
             </button>
           </div>
 
-          {curentBtn === "all" && (
-            <ul className="works__list target">
-              <li className="works__item">
-                <a href="#" className="works__link">
-                  <div className="works__image-box">
-                    <img src={imgOne} loading="lazy" alt="" />
-                  </div>
-                </a>
-              </li>
+          <ul className="works__list target">
+            {curentBtn === "all" && (
+              <>
+                <WorkItem srcImg={imgOne} />
+                <WorkItem srcImg={imgTwo} />
+                <WorkItem srcImg={imgThree} />
+              </>
+              // </ul>
+            )}
 
-              <li className="works__item">
-                <a href="#" className="works__link">
-                  <div className="works__image-box">
-                    <img src={imgTwo} loading="lazy" alt="" />
-                  </div>
-                </a>
-              </li>
+            {curentBtn === "ui" && (
+              <>
+                <WorkItem srcImg={imgOne} />
+              </>
+            )}
 
-              <li className="works__item">
-                <a href="#" className="works__link">
-                  <div className="works__image-box">
-                    <img src={imgThree} loading="lazy" alt="" />
-                  </div>
-                </a>
-              </li>
-            </ul>
-          )}
+            {curentBtn === "ux" && <WorkItem srcImg={imgTwo} />}
 
-          {curentBtn === "ui" && (
-            <ul className="works__list target">
-              <li className="works__item">
-                <a href="#" className="works__link">
-                  <div className="works__image-box">
-                    <img src={imgOne} loading="lazy" alt="" />
-                  </div>
-                </a>
-              </li>
-            </ul>
-          )}
-
-          {curentBtn === "ux" && (
-            <ul className="works__list target">
-              <li className="works__item">
-                <a href="#" className="works__link">
-                  <div className="works__image-box">
-                    <img src={imgTwo} loading="lazy" alt="" />
-                  </div>
-                </a>
-              </li>
-            </ul>
-          )}
-
-          {curentBtn === "design" && (
-            <ul className="works__list target">
-              <li className="works__item">
-                <a href="#" className="works__link">
-                  <div className="works__image-box">
-                    <img src={imgThree} loading="lazy" alt="" />
-                  </div>
-                </a>
-              </li>
-            </ul>
-          )}
+            {curentBtn === "design" && <WorkItem srcImg={imgThree} />}
+          </ul>
         </div>
       </section>
     </>
   );
 };
-
-// };
 
 export default WorksSection;
