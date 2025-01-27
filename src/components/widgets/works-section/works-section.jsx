@@ -37,7 +37,7 @@ const WorksSection = () => {
 
           <div className="works__button-box">
             <button
-              className="works__button button button--active"
+              className="works__button button"
               type="button"
               onClick={onAll}
             >
@@ -73,14 +73,9 @@ const WorksSection = () => {
                 <WorkItem srcImg={imgTwo} />
                 <WorkItem srcImg={imgThree} />
               </>
-              // </ul>
             )}
 
-            {curentBtn === "ui" && (
-              <>
-                <WorkItem srcImg={imgOne} />
-              </>
-            )}
+            {curentBtn === "ui" && <WorkItem srcImg={imgOne} />}
 
             {curentBtn === "ux" && <WorkItem srcImg={imgTwo} />}
 
