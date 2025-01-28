@@ -99,15 +99,13 @@ const RegistrationSection = () => {
                 onClick={handleBtnSendClick}
               >
                 Send Message
-                <div className="registration-plane-btn">
-                  <img
-                    className={classNamePlaneAnimation}
-                    ref={btnRef}
-                    src={send}
-                    alt=""
-                    onAnimationEnd={handleAnimationEnd}
-                  />
-                </div>
+                <img
+                  className={classNamePlaneAnimation}
+                  ref={btnRef}
+                  src={send}
+                  alt=""
+                  onAnimationEnd={handleAnimationEnd}
+                />
               </button>
             </form>
           </div>

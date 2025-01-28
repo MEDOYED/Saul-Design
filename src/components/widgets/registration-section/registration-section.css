@@ -91,20 +91,14 @@
 }
 
 .registration__form-send {
-  position: relative;
-  padding-right: 56px;
+  display: flex;
   margin-top: 24px;
 }
 
-.registration-plane-btn {
-  width: 20px;
-  height: 20px;
-}
-
 .registration-plane {
-  position: absolute;
-  left: 167px;
-  top: 13px;
+  display: flex;
+  margin-left: 15px;
+  margin-top: 2px;
 }
 
 .plane-animation {
