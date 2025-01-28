@@ -9,6 +9,10 @@ const RegistrationSection = () => {
   const [isAnimating, setIsAnimating] = useState(false);
   const btnRef = useRef(null);
 
+  const classNamePlaneAnimation = `registration-plane ${
+    isAnimating ? "plane-animation" : ""
+  }`;
+
   const handleBtnSendClick = e => {
     e.preventDefault();
     setIsAnimating(true);
@@ -97,9 +101,7 @@ const RegistrationSection = () => {
                 Send Message
                 <div className="registration-plane-btn">
                   <img
-                    className={`registration-plane ${
-                      isAnimating ? "plane-animation" : ""
-                    }`}
+                    className={classNamePlaneAnimation}
                     ref={btnRef}
                     src={send}
                     alt=""
