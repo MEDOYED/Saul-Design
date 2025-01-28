@@ -1,9 +1,46 @@
+import { useRef, useState } from "react";
+
 import send from "../../../assets/img/registration/reg-send.svg";
 import img1 from "../../../assets/img/registration/registration__image.svg";
 
 import "./registration-section.css";
 
 const RegistrationSection = () => {
+  // анимация самолетика при нажатии на кнопку
+  // document
+  //   .querySelector(".registration__form-send")
+  //   .addEventListener("click", function () {
+  //     var plane = document.querySelector(".registration-plane");
+  //     plane.classList.add("plane-animation");
+  //     plane.removeEventListener("click", arguments.callee);
+  //     plane.addEventListener("animationend", function () {
+  //       plane.classList.remove("plane-animation");
+  //       plane.addEventListener("click", arguments.callee);
+  //     });
+  //   });
+
+  const [isAnimating, setIsAnimating] = useState(false);
+  const btnRef = useRef(null);
+
+  const planeFly = () => {
+    if (isAnimating === true) {
+      btnRef.current.classList.add("plane-animation");
+    } else {
+      btnRef.current.classList.remove("plane-animation");
+    }
+  };
+
+  const handleBtnSendClick = e => {
+    e.preventDefault();
+    setIsAnimating(true);
+    planeFly();
+  };
+
+  const handleAnimationEnd = () => {
+    setIsAnimating(false);
+    planeFly();
+  };
+
   return (
     <>
       <section class="registration" id="registration">
@@ -78,11 +115,18 @@ const RegistrationSection = () => {
                 id="sendButton"
                 type="submit"
                 form="registration__form"
+                onClick={handleBtnSendClick}
               >
-                <span>Send Message</span>
-                <span>
-                  <img src={send} alt="" />
-                </span>
+                Send Message
+                <div className="registration-plane-btn">
+                  <img
+                    className="registration-plane"
+                    ref={btnRef}
+                    src={send}
+                    alt=""
+                    onAnimationEnd={handleAnimationEnd}
+                  />
+                </div>
               </button>
             </form>
           </div>
