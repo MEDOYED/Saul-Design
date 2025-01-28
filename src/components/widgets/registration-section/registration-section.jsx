@@ -6,39 +6,16 @@ import img1 from "../../../assets/img/registration/registration__image.svg";
 import "./registration-section.css";
 
 const RegistrationSection = () => {
-  // анимация самолетика при нажатии на кнопку
-  // document
-  //   .querySelector(".registration__form-send")
-  //   .addEventListener("click", function () {
-  //     var plane = document.querySelector(".registration-plane");
-  //     plane.classList.add("plane-animation");
-  //     plane.removeEventListener("click", arguments.callee);
-  //     plane.addEventListener("animationend", function () {
-  //       plane.classList.remove("plane-animation");
-  //       plane.addEventListener("click", arguments.callee);
-  //     });
-  //   });
-
   const [isAnimating, setIsAnimating] = useState(false);
   const btnRef = useRef(null);
-
-  const planeFly = () => {
-    if (isAnimating === true) {
-      btnRef.current.classList.add("plane-animation");
-    } else {
-      btnRef.current.classList.remove("plane-animation");
-    }
-  };
 
   const handleBtnSendClick = e => {
     e.preventDefault();
     setIsAnimating(true);
-    planeFly();
   };
 
   const handleAnimationEnd = () => {
     setIsAnimating(false);
-    planeFly();
   };
 
   return (
@@ -120,7 +97,9 @@ const RegistrationSection = () => {
                 Send Message
                 <div className="registration-plane-btn">
                   <img
-                    className="registration-plane"
+                    className={`registration-plane ${
+                      isAnimating ? "plane-animation" : ""
+                    }`}
                     ref={btnRef}
                     src={send}
                     alt=""
